@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to load and play the video background
     function loadAndPlayVideoBackground() {
         fetch('video-background.html')
             .then(response => response.text())
