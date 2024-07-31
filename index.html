@@ -7,21 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Include video background from another HTML file -->
+    <!-- Container for video background -->
     <div id="video-background-container"></div>
     
     <div class="content">
         <h1>Your Content Here</h1>
     </div>
 
-    <script>
-        // Load video-background.html content into the container
-        fetch('video-background.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('video-background-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading video background:', error));
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
