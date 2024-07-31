@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video-background.html">Video Background</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+            <button class="nav-toggle">☰</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to My Website</h2>
+        <div class="content-section" id="gallery">
+            <h3>Image Gallery</h3>
+            <iframe src="gallery.html"></iframe>
+        </div>
+        <div class="content-section" id="video-background">
+            <h3>Video Background</h3>
+            <iframe src="video-background.html"></iframe>
+        </div>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>Connect with Us</h2>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Your email" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="footer-date">© <span class="footer-date"></span></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
