@@ -4,124 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for the main index page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .content-section {
+            margin: 2rem 0;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">My Website</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#subscriptions">Subscriptions</a></li>
-                <li><a href="#donations">Donations</a></li>
-                <li><a href="#surveys">Surveys</a></li>
-                <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
-                <li><a href="#featured-content">Featured Content</a></li>
-                <li><a href="#social-media">Social Media</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video-background.html">Video Background</a></li>
+                <!-- Add more links as needed -->
             </ul>
         </nav>
     </header>
-    
-    <main id="home">
-        <section class="hero">
-            <h1>Welcome to My Website</h1>
-            <p>Your one-stop place for news, entertainment, and more.</p>
-        </section>
-        
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about what we do and who we are.</p>
-        </section>
-        
-        <section id="shop">
-            <h2>Shop</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Product 1</h3>
-                    <p>Description of product 1.</p>
-                </div>
-                <div class="card">
-                    <h3>Product 2</h3>
-                    <p>Description of product 2.</p>
-                </div>
-                <div class="card">
-                    <h3>Product 3</h3>
-                    <p>Description of product 3.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="cta" class="cta">
-            <h2>Join Us Now!</h2>
-            <p>Get the latest updates and offers.</p>
-            <a href="#subscribe">Subscribe</a>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Check out our latest projects and initiatives.</p>
-        </section>
-        
-        <section id="subscriptions">
-            <h2>Subscriptions</h2>
-            <p>Subscribe to our newsletter for updates.</p>
-            <form>
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-        
-        <section id="donations">
-            <h2>Donations</h2>
-            <p>Support our work through donations.</p>
-        </section>
-        
-        <section id="surveys">
-            <h2>Surveys</h2>
-            <p>Participate in our surveys to provide feedback.</p>
-        </section>
-        
-        <section id="behind-the-scenes">
-            <h2>Behind the Scenes</h2>
-            <p>Get a glimpse of what happens behind the scenes.</p>
-        </section>
-        
-        <section id="featured-content">
-            <h2>Featured Content</h2>
-            <p>Explore our featured content and highlights.</p>
-        </section>
-        
-        <section id="social-media">
-            <h2>Follow Us</h2>
-            <div class="social-media">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
-        </section>
+    <main>
+        <h2>Welcome to My Website</h2>
+        <div class="content-section">
+            <h3>Image Gallery</h3>
+            <iframe src="gallery.html"></iframe>
+        </div>
+        <div class="content-section">
+            <h3>Video Background</h3>
+            <iframe src="video-background.html"></iframe>
+        </div>
+        <!-- Add more sections as needed -->
     </main>
-    
     <footer>
         <div class="footer-content">
-            <h2>Stay Connected</h2>
+            <h2>Connect with Us</h2>
             <div class="social-media">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
             </div>
             <div class="newsletter">
                 <h3>Subscribe to our Newsletter</h3>
-                <form>
-                    <input type="email" placeholder="Enter your email">
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Your email" required>
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
         </div>
     </footer>
-    
-    <script src="scripts.js"></script>
 </body>
 </html>
