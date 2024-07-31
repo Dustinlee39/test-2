@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Embedded CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-media a {
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        .newsletter {
+            margin-top: 1rem;
+        }
+        .newsletter input[type="email"] {
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .newsletter input[type="submit"] {
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        /* Gallery styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .gallery figure {
+            flex: 1 1 calc(33.333% - 2rem);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .gallery figure:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .gallery figcaption {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #555;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .gallery figure {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#subscriptions">Subscriptions</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#surveys">Surveys</a></li>
+                <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+                <li><a href="#featured-content">Featured Content</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="image1.jpg" alt="Image 1">
+                    <figcaption>Image 1 Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="image2.jpg" alt="Image 2">
+                    <figcaption>Image 2 Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="image3.jpg" alt="Image 3">
+                    <figcaption>Image 3 Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="image4.jpg" alt="Image 4">
+                    <figcaption>Image 4 Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="image5.jpg" alt="Image 5">
+                    <figcaption>Image 5 Description</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>Connect with Us</h2>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Your email" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
