@@ -30,4 +30,5 @@ html, body {
     color: white;
     text-align: center;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to improve text readability */
 }
